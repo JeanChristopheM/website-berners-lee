@@ -56,4 +56,24 @@ body {
         flex-direction: row;
         list-style-type: none;
         padding:0;
+        color:lightgrey;
     }
+        nav li {
+            flex:1;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+            nav li a, nav li a:visited {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                text-decoration: none;
+                color:inherit;
+            }
+            nav li a:hover {
+                color:indianred;
+            }
