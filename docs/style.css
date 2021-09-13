@@ -1,3 +1,59 @@
+:root {
+    font-size: 14px;
+}
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: lightgrey;
 }
+    body > * {
+        max-width: 450px;
+        padding:1rem;
+        margin: 1rem auto;
+        background-color: white;
+        border-radius: .5rem;
+        color:grey;
+    }
+    h1, h2, h3 {
+        margin:0;
+    }
+    h2 {
+        font-size:1.3rem;
+    }
+    h3 {
+        font-size:1.1rem;
+    }
+    header {
+        align-content: center;
+        text-align:center;
+    }
+        header img{
+            max-width: 20%;
+            border-radius: 50%;
+            border:.3rem solid lightgrey;
+            margin: 1rem auto;
+        }
+        header h1{
+            color:indianred;
+            font-size:1.5rem;
+            font-weight: 800;
+        }
+        header h2 {
+            font-weight: 600;
+        }
+        header p{
+            text-align: justify;
+        }
+        header a, header a:visited {
+            text-decoration: none;
+            font-weight: 600;
+            color:white;
+            background-color: indianred;
+            padding:.5rem;
+            border-radius: .2rem;
+        }
+    nav ul {
+        display:flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding:0;
+    }
