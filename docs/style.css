@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 :root {
     font-size: 14px;
+}
+p{
+    margin:0;
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -12,6 +18,7 @@ body {
         background-color: white;
         border-radius: .5rem;
         color:grey;
+        box-shadow: 2px 2px 2px 0px hsla(125, 0%, 0%, .3);
     }
     h1, h2, h3 {
         margin:0;
@@ -30,7 +37,6 @@ body {
             max-width: 20%;
             border-radius: 50%;
             border:.3rem solid lightgrey;
-            margin: 1rem auto;
         }
         header h1{
             color:indianred;
@@ -42,6 +48,7 @@ body {
         }
         header p{
             text-align: justify;
+            margin-bottom:1rem;
         }
         header a, header a:visited {
             text-decoration: none;
@@ -77,3 +84,37 @@ body {
             nav li a:hover {
                 color:indianred;
             }
+    main section{
+        display:grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas: 
+        "img title"
+        "img description"
+        ;
+    }
+    main section:not(:last-of-type) {
+        margin-bottom:1rem;
+    }
+        main section img {
+            grid-area: img;
+            max-width: 100px;
+        }
+        main section h3 {
+            grid-area: title;
+        }
+        main section p {
+            grid-area: description;
+            padding:1rem;
+        }
+    main>h2 {
+        text-align: center;
+        font-weight: 600;
+        padding-bottom:2rem;
+    }
+    main section>h3 {
+        text-align: center;
+    }
+    main section>p {
+        text-align: justify;
+    }
