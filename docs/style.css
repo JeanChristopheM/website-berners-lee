@@ -45,6 +45,7 @@ body {
         }
         header h2 {
             font-weight: 600;
+            padding: 1rem 0;
         }
         header p{
             text-align: justify;
@@ -57,7 +58,14 @@ body {
             background-color: indianred;
             padding:.5rem;
             border-radius: .2rem;
+            display: inline-block;
+            transform: scale(1);
+            transition: all .2s;
         }
+            header a:hover, header a:active {
+                background-color:indigo;
+                transform: scale(1.1);
+            }
     nav ul {
         display:flex;
         flex-direction: row;
@@ -80,9 +88,12 @@ body {
 
                 text-decoration: none;
                 color:inherit;
+                transform: scale(1);
+                transition: all .2s;
             }
             nav li a:hover {
                 color:indianred;
+                transform: scale(1.1);
             }
     main section{
         display:grid;
